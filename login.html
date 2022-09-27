@@ -23,23 +23,65 @@
         <!-- 登录的box -->
         <div class="login-wrap">
             <!-- 登陆的表单 -->
-            
-
-
-            <a href="JavaScript:;" id="go2Reg">登录</a>
+            <form class="layui-form" action="">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>   
+                    <input type="text" name="nsername" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 用户密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i> 
+                    <input type="password" name="password" required  lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登录按钮 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid layui-btn layui-btn-normal">登录</button>
+                </div>
+                <div class="layui-form-item links">
+                    <a href="JavaScript:;" id="go2Reg">注册账号</a>
+                </div>
+            </form>
         </div>
 
-        <!-- 注册的box -->
+        <!-- 注册的box --> 
         <div class="reg-wrap">
-            <a href="JavaScript:;" id="go2Longin">注册账号</a>
+            <form class="layui-form" action="">
+                <!-- 用户名 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>   
+                    <input type="text" name="nsername" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 用户密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i> 
+                    <input type="password" name="password" required  lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 这是密码确认框 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i> 
+                    <input type="password" name="password1" required  lay-verify="required" placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登录按钮 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid layui-btn layui-btn-normal">登录</button>
+                </div>
+                <div class="layui-form-item links">
+                    <a href="JavaScript:;" id="go2Longin">登录账号</a>
+                </div>
+            </form>
+
         </div>
 
     </div>
-
+    
+    <!-- 导入Layui的js文件 -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
     <!-- 导入JQuery -->
-   <script src="./assets/lib/jquery.js"></script>
+    <scrip src="./assets/lib/jquery.js"></script>
     <!-- 导入自己的JS脚本 -->
     <script src="./assets/js/login.js"></script>
+
 </body>
 
 </html>
